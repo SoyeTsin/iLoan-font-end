@@ -1,0 +1,132 @@
+<template>
+    <a-layout class="view">
+        <!--侧栏-->
+        <a-layout-sider class="sider" width="256">
+            <Sider :menuData="siderData" :current="siderCurrent" :menuInfo="menuInfo"/>
+        </a-layout-sider>
+        <!--主体-->
+        <a-layout class="content-main">
+            <!--头部-->
+            <Header class="header" :menuData="menuData" @menuClick="menuClick"></Header>
+            <!--内容部分-->
+<!--            <a-layout class="main">-->
+                <a-layout-content class="content">
+                    <router-view></router-view>
+                </a-layout-content>
+                <!--footer-->
+<!--                <a-layout class="footer">-->
+<!--                    <a-layout-footer :style="{ textAlign: 'center',fontSize:'12px' }">-->
+<!--                        Copyright @Shenzhen FORMS SYNTRON Co.Ltd. 2019-2020. All rights reserved-->
+<!--                    </a-layout-footer>-->
+<!--                </a-layout>-->
+<!--            </a-layout>-->
+        </a-layout>
+    </a-layout>
+</template>
+<script>
+import Header from "@/layout/Header";
+import UM from "@/service/um";
+import Sider from "@/layout/Sider";
+
+
+export default {
+    name: "Base",
+    components: {Sider, Header},
+    data(){
+        return {
+            menuData:[],
+            menuInfo:{},
+            siderData:[],
+            siderCurrent:''
+        }
+    },
+    mounted(){
+        // this.getMenu();
+    },
+    methods: {
+        //获取菜单
+        getMenu(){
+            console.log(this.global.userInfo)
+            let roles = []
+            this.global.userInfo.roles.map(item => roles.push(item.id))
+            UM.getMenu({roles:roles}).then(res=>{
+                this.menuData = this.handleMenuData(res);
+                console.log(this.menuData)
+            })
+        },
+        menuClick(e){
+            this.siderCurrent = e.key;
+            this.siderData = this.menuData[e.currentArr[0]].children || [];
+            this.menuInfo = e.menuInfo;
+            // let selectDataChildren = this.siderData
+            console.log(this.siderData)
+        },
+        handleMenuData(data){
+            // console.log(this.$router)
+            // console.log(this.$route)
+            data.forEach(item=> {
+                delete item.children;
+            });
+            let map = {};
+            data.forEach(item=>{
+                map[item.id] = item;
+            });
+            let val = [];
+            data.forEach((item)=>{
+                // item.key = 'menu_'+index
+                let parent = map[item.parentId];
+                // console.log(parent)
+                if(parent){
+                    parent.children = parent.children || [];
+                    // let menuKey = ''
+                    // if(!parent.menuKey){
+                    //     menuKey = val.length;
+                    //     console.log('没有menuKey,取val的长度',val.length)
+                    // }else{
+                    //     menuKey = parent.menuKey
+                    //     console.log('有menuKey',parent.menuKey)
+                    // }
+                    // item.menuKey = menuKey + '_' + parent.children.length;
+                    parent.children.push(item);
+                }else{
+                    // item.menuKey = val.length + '';
+                    val.push(item);
+                }
+            });
+            console.log(val);
+            return val;
+        }
+    }
+}
+</script>
+<style lang="less" scoped>
+.view{
+    display: flex;
+    .header{
+        height: 64px;
+        flex-shrink: 1;
+        padding: 0;
+    }
+    .content-main{
+        flex: 1;
+        .main{
+            display: flex;
+            flex-direction: column;
+            min-height:auto;
+
+            .content{
+                background: #FFF;
+                padding: 15px 20px;
+                margin:0 20px 20px 20px;
+                flex: 1;
+            }
+            .footer{
+                flex: 0 1 auto;
+            }
+        }
+        .sider{
+
+        }
+    }
+}
+</style>

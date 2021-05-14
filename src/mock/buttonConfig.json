@@ -1,0 +1,75 @@
+{
+  "system": {
+    "user_manager": {
+      "addUser": "99010101",
+      "deleteUser": "99010102",
+      "editUser": "99010103",
+      "deactiveUser": "99010105",
+      "activeUser": "99010106",
+      "loginSetting": "99010110",
+      "unbindUser": "99010111"
+    },
+    "group_manager": {
+      "addGroup": "99010201",
+      "deleteGroup": "99010202",
+      "editGroup": "99010203",
+      "addGroupUser": "99010107",
+      "deleteGroupUser": "99010108"
+    },
+    "role_manager": {
+      "addRole": "99010301",
+      "deleteRole": "99010302",
+      "editRole": "99010303"
+    },
+    "menu_manager": {
+      "addMenu": "99010501",
+      "deleteMenu": "99010502",
+      "editMenu": "99010503"
+    },
+    "Config": {
+      "Add": "999020101",
+      "Edit": "999020102",
+      "Remove": "999020103",
+      "Check": "999020104"
+    },
+    "Key_management": {
+      "Add": "99020201",
+      "Edit": "99020202",
+      "Remove": "99020203"
+    }
+  },
+  "Product": {
+    "NewProduct": "3001",
+    "ProductDetail": "3002",
+    "EditProductRequested": "3003",
+    "EditProductAgreed": "3004",
+    "EditProductReturned": "3005",
+    "QueryProductList": "3006",
+    "ViewProductHistory": "3007"
+  },
+  "Customer": {
+    "NewCustomer": "4001",
+    "EditCustomerAgreed": "4002",
+    "EditCustomerRequested": "4003",
+    "CustomerDetail": "4004",
+    "CustomerList": "4005",
+    "CustomerHistory": "4006",
+    "AttachedFiles": "4007",
+    "DownloadFile": "4008",
+    "SendEmail": "4009",
+    "EditCustomerReturned": "4010"
+  },
+  "Loan": {
+    "NewLoan": "6001",
+    "EditLoanRequested": "6002",
+    "LoanDetail": "6003",
+    "EditLoanReturned": "6004",
+    "LoanList": "6005",
+    "RepaymentPlan": "6006",
+    "LoanHistory": "6007",
+    "DownloadFiles": "6008",
+    "SendEmail": "6009",
+    "EditLoanAgreed": "6010",
+    "EditNewLoanDetail": "6011"
+  }
+}

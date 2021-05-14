@@ -1,0 +1,767 @@
+[
+  {
+    "image": "home",
+    "href": "/home",
+    "display": "home",
+    "lev": "1",
+    "disabled": false,
+    "children": []
+  },
+  {
+    "image": "instagram",
+    "href": "",
+    "display": "design",
+    "lev": "1",
+    "disabled": false,
+    "children": [
+      {
+        "image": "codepen",
+        "href": "",
+        "display": "model",
+        "lev": "2",
+        "disabled": true,
+        "children": [
+          {
+            "image": "",
+            "href": "/metamodel",
+            "display": "metamodel",
+            "lev": "3",
+            "disabled": false,
+            "children": []
+          }
+        ]
+      },
+      {
+        "image": "meh",
+        "href": "/modelTable",
+        "display": "service",
+        "type": "Service",
+        "lev": "2",
+        "disabled": true,
+        "children": [
+          {
+            "image": "",
+            "href": "/modelTable",
+            "display": "bss",
+            "type": "BSS",
+            "disabled": false,
+            "lev": "3",
+            "children": [
+            ]
+          },
+          {
+            "image": "",
+            "href": "/modelTable",
+            "display": "bfs",
+            "type": "BFS",
+            "disabled": false,
+            "lev": "3",
+            "children": []
+          },
+          {
+            "image": "",
+            "href": "/modelTable",
+            "display": "das",
+            "lev": "3",
+            "type": "DAS",
+            "disabled": false,
+            "children": []
+          },
+          {
+            "image": "",
+            "href": "/modelTable",
+            "display": "event",
+            "type": "Event",
+            "lev": "3",
+            "disabled": false,
+            "children": []
+          }
+        ]
+      },
+      {
+        "image": "appstore",
+        "href": "/modelTable",
+        "display": "data",
+        "type": "Data",
+        "lev": "2",
+        "disabled": true,
+        "children": [
+          {
+            "image": "",
+            "href": "/modelTable",
+            "display": "dataentry",
+            "type": "Metadata Item",
+            "lev": "3",
+            "disabled": false,
+            "children": []
+          },
+          {
+            "image": "",
+            "href": "/modelTable",
+            "display": "interface",
+            "lev": "3",
+            "type": "Interface",
+            "disabled": false,
+            "children": []
+          },
+          {
+            "image": "",
+            "href": "/modelTable",
+            "display": "database",
+            "type": "database",
+            "lev": "3",
+            "disabled": false,
+            "children": []
+          }
+        ]
+      },
+      {
+        "image": "read",
+        "href": "/modelTable",
+        "display": "resource",
+        "type": "Resource",
+        "lev": "2",
+        "disabled": true,
+        "children": [
+          {
+            "image": "region",
+            "href": "/modelTable",
+            "display": "iass_resource",
+            "type": "Region",
+            "lev": "3",
+            "disabled": false,
+            "children": [
+              {
+                "image": "",
+                "href": "/modelTable",
+                "display": "region",
+                "lev": "4",
+                "type": "Region",
+                "disabled": false,
+                "children": []
+              },
+              {
+                "image": "",
+                "href": "/modelTable",
+                "display": "available_one",
+                "lev": "4",
+                "type": "Available Zone",
+                "disabled": false,
+                "children": []
+              },
+              {
+                "image": "",
+                "href": "/modelTable",
+                "display": "network_zone",
+                "type": "Network Zone",
+                "lev": "4",
+                "disabled": false,
+                "children": []
+              },
+              {
+                "image": "",
+                "href": "/modelTable",
+                "display": "rack",
+                "type": "Rack",
+                "lev": "4",
+                "disabled": false,
+                "children": []
+              },
+              {
+                "image": "",
+                "href": "/modelTable",
+                "display": "machine",
+                "type": "Machine",
+                "lev": "4",
+                "disabled": false,
+                "children": []
+              }
+            ]
+          },
+          {
+            "image": "",
+            "href": "/modelTable",
+            "display": "pass_resource",
+            "type": "K8S Cluster",
+            "lev": "3",
+            "disabled": false,
+            "children": [
+              {
+                "image": "",
+                "href": "/modelTable",
+                "display": "k8s_cluster",
+                "type": "K8S Cluster",
+                "lev": "4",
+                "disabled": false,
+                "children": []
+              },
+              {
+                "image": "",
+                "href": "/modelTable",
+                "display": "db_cluster",
+                "type": "DB Cluster",
+                "lev": "4",
+                "disabled": false,
+                "children": []
+              },
+              {
+                "image": "",
+                "href": "/modelTable",
+                "display": "redis_cluster",
+                "type": "Redis Cluster",
+                "lev": "4",
+                "disabled": false,
+                "children": []
+              },
+              {
+                "image": "",
+                "href": "/modelTable",
+                "display": "load_balance",
+                "type": "Load Balance",
+                "lev": "4",
+                "disabled": false,
+                "children": []
+              },
+              {
+                "image": "",
+                "href": "/modelTable",
+                "display": "message_bus",
+                "type": "Message Bus",
+                "lev": "4",
+                "disabled": false,
+                "children": [
+                  {
+                    "image": "",
+                    "href": "/modelTable",
+                    "display": "mb_cluster",
+                    "type": "MB Cluster",
+                    "lev": "5",
+                    "disabled": false,
+                    "children": []
+                  },
+                  {
+                    "image": "",
+                    "href": "/modelTable",
+                    "display": "vpn",
+                    "type": "VPN",
+                    "lev": "5",
+                    "disabled": false,
+                    "children": []
+                  },
+                  {
+                    "image": "",
+                    "href": "/modelTable",
+                    "display": "queue",
+                    "type": "Queue",
+                    "lev": "5",
+                    "disabled": false,
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "image": "",
+                "href": "/modelTable",
+                "display": "cache",
+                "type": "Cache",
+                "lev": "3",
+                "disabled": false,
+                "children": []
+              },
+              {
+                "image": "",
+                "href": "/modelTable",
+                "display": "file_service",
+                "type": "File Service",
+                "lev": "3",
+                "disabled": false,
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "image": "gold",
+        "href": "/modelTable",
+        "display": "distributed",
+        "type": "Distributed",
+        "lev": "2",
+        "disabled": true,
+        "children": [
+          {
+            "image": "",
+            "href": "/modelTable",
+            "display": "dcntype",
+            "type": "DCN Type",
+            "lev": "3",
+            "disabled": false,
+            "children": []
+          },
+          {
+            "image": "",
+            "href": "/modelTable",
+            "display": "dcn",
+            "type": "DCN",
+            "lev": "3",
+            "disabled": false,
+            "children": []
+          },
+          {
+            "image": "",
+            "href": "/modelTable",
+            "display": "dcninstance",
+            "type": "DCN Instance",
+            "lev": "3",
+            "disabled": false,
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "image": "switcher",
+    "href": "",
+    "display": "sop",
+    "lev": "1",
+    "disabled": false,
+    "children": [
+      {
+        "image": "shop",
+        "href": "",
+        "display": "materials",
+        "lev": "2",
+        "disabled": true,
+        "children": [
+          {
+            "image": "",
+            "href": "/materials",
+            "display": "materials",
+            "lev": "3",
+            "disabled": false,
+            "children": []
+          },
+          {
+            "image": "",
+            "href": "/registries",
+            "display": "registries",
+            "lev": "3",
+            "disabled": false,
+            "children": []
+          },
+          {
+            "image": "",
+            "href": "/replications",
+            "display": "replications",
+            "lev": "3",
+            "disabled": false,
+            "children": []
+          }
+        ]
+      },
+      {
+        "image": "switcher",
+        "href": "",
+        "display": "sop",
+        "lev": "2",
+        "disabled": true,
+        "children": [
+          {
+            "image": "",
+            "href": "/templatedeploy",
+            "display": "store",
+            "lev": "4",
+            "disabled": false,
+            "children": []
+          },
+          {
+            "image": "",
+            "href": "/deployDCN",
+            "display": "dcndeploy",
+            "lev": "3",
+            "disabled": false,
+            "children": [
+              {
+                "image": "",
+                "href": "/deployDCN",
+                "display": "menu_resource",
+                "lev": "3",
+                "disabled": false,
+                "children": []
+              },
+              {
+                "image": "",
+                "href": "/settingDCN",
+                "display": "menu_one",
+                "lev": "3",
+                "disabled": false,
+                "children": []
+              }
+            ]
+          },
+          {
+            "image": "",
+            "href": "/systemlist",
+            "display": "upgrade",
+            "lev": "3",
+            "disabled": false,
+            "children": []
+          }
+        ]
+      },
+      {
+        "image": "read",
+        "href": "",
+        "display": "job",
+        "lev": "2",
+        "disabled": true,
+        "children": [
+          {
+            "image": "",
+            "href": "/joblist",
+            "display": "task",
+            "lev": "3",
+            "disabled": false,
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "image": "setting",
+    "href": "",
+    "display": "monitor",
+    "lev": "2",
+    "disabled": false,
+    "children": [
+      {
+        "image": "thunderbolt",
+        "href": "",
+        "display": "alarm",
+        "lev": "3",
+        "disabled": false,
+        "children": [
+          {
+            "image": "thunderbolt",
+            "href": "/rapmAlarmDetail",
+            "display": "alarm_query",
+            "lev": "4",
+            "disabled": false,
+            "children": [
+            ]
+          },
+          {
+            "image": "profile",
+            "href": "/rapmAlarmConfig",
+            "display": "alarm_config",
+            "lev": "4",
+            "disabled": false,
+            "children": [
+            ]
+          }
+        ]
+      },
+      {
+        "image": "profile",
+        "href": "",
+        "display": "metric",
+        "lev": "3",
+        "disabled": false,
+        "children": [
+          {
+            "image": "setting",
+            "href": "/metricMachine",
+            "display": "iass_metric",
+            "lev": "4",
+            "disabled": false,
+            "children": [
+              {
+                "image": "setting",
+                "href": "/metricMachine",
+                "display": "engine",
+                "lev": "5",
+                "disabled": false,
+                "children": []
+              }
+            ]
+          },
+          {
+            "image": "",
+            "href": "/metricSolaceCluster",
+            "display": "pass_metric",
+            "lev": "4",
+            "disabled": false,
+            "children": [
+              {
+                "image": "",
+                "href": "",
+                "display": "k8s_cluster",
+                "lev": "5",
+                "disabled": true,
+                "children": []
+              },
+              {
+                "image": "",
+                "href": "/metricDbCluster",
+                "display": "db_cluster",
+                "lev": "5",
+                "disabled": false,
+                "children": []
+              },
+              {
+                "image": "",
+                "href": "",
+                "display": "redis_cluster",
+                "lev": "5",
+                "disabled": true,
+                "children": []
+              },
+              {
+                "image": "",
+                "href": "/metricSolaceCluster",
+                "display": "solace_cluster",
+                "lev": "5",
+                "disabled": false,
+                "children": []
+              },
+              {
+                "image": "",
+                "href": "",
+                "display": "lb_cluster",
+                "lev": "5",
+                "disabled": true,
+                "children": []
+              },
+              {
+                "image": "",
+                "href": "",
+                "display": "file_systen",
+                "lev": "5",
+                "disabled": true,
+                "children": []
+              },
+              {
+                "image": "",
+                "href": "",
+                "display": "storage_cluster",
+                "lev": "5",
+                "disabled": true,
+                "children": []
+              }
+            ]
+          },
+          {
+            "image": "setting",
+            "href": "/metricService",
+            "display": "service_metric",
+            "lev": "4",
+            "disabled": false,
+            "children": []
+          },
+          {
+            "image": "setting",
+            "href": "/rapmInstanceQuery",
+            "display": "instance_metric",
+            "lev": "4",
+            "disabled": false,
+            "children": []
+          },
+          {
+            "image": "dashboard",
+            "href": "/dashboard",
+            "display": "dashboard",
+            "blank": true,
+            "lev": "4",
+            "disabled": false,
+            "children": []
+          }
+        ]
+      },
+      {
+        "image": "database",
+        "href": "",
+        "display": "log",
+        "lev": "3",
+        "disabled": false,
+        "children": [
+          {
+            "image": "",
+            "href": "",
+            "display": "iass_log",
+            "lev": "4",
+            "disabled": false,
+            "children": [
+              {
+                "image": "",
+                "href": "",
+                "display": "engine",
+                "lev": "5",
+                "disabled": true,
+                "children": []
+              }
+            ]
+          },
+          {
+            "image": "",
+            "href": "",
+            "display": "pass_log",
+            "lev": "4",
+            "disabled": false,
+            "children": [
+              {
+                "image": "",
+                "href": "",
+                "display": "k8s_cluster",
+                "lev": "5",
+                "disabled": true,
+                "children": []
+              },
+              {
+                "image": "",
+                "href": "",
+                "display": "db_cluster",
+                "lev": "5",
+                "disabled": true,
+                "children": []
+              },
+              {
+                "image": "",
+                "href": "",
+                "display": "redis_cluster",
+                "lev": "5",
+                "disabled": true,
+                "children": []
+              },
+              {
+                "image": "",
+                "href": "",
+                "display": "solace_cluster",
+                "lev": "5",
+                "disabled": true,
+                "children": []
+              },
+              {
+                "image": "",
+                "href": "",
+                "display": "lb_cluster",
+                "lev": "5",
+                "disabled": true,
+                "children": []
+              },
+              {
+                "image": "",
+                "href": "",
+                "display": "file_systen",
+                "lev": "5",
+                "disabled": true,
+                "children": []
+              },
+              {
+                "image": "",
+                "href": "",
+                "display": "storage_cluster",
+                "lev": "5",
+                "disabled": true,
+                "children": []
+              }
+            ]
+          },
+          {
+            "image": "",
+            "href": "",
+            "display": "service_log",
+            "lev": "4",
+            "disabled": true,
+            "children": [
+
+            ]
+          }
+
+        ]
+      },
+      {
+        "image": "hdd",
+        "href": "",
+        "display": "analysis",
+        "lev": "3",
+        "disabled": false,
+        "children": [
+          {
+            "image": "setting",
+            "href": "",
+            "display": "diagno_analysis",
+            "lev": "4",
+            "disabled": true,
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "image": "user",
+    "href": "",
+    "display": "authorSetting",
+    "lev": "1",
+    "disabled": false,
+    "children": [
+      {
+        "image": "user",
+        "href": "",
+        "display": "author",
+        "lev": "3",
+        "disabled": false,
+        "children": [
+          {
+            "image": "",
+            "href": "/user_manager",
+            "display": "user_manager",
+            "lev": "4",
+            "disabled": false,
+            "children": []
+          },{
+            "image": "",
+            "href": "/group_manager",
+            "display": "group_manager",
+            "lev": "4",
+            "disabled": false,
+            "children": []
+          },{
+            "image": "",
+            "href": "/role_manager",
+            "display": "role_manager",
+            "lev": "4",
+            "disabled": false,
+            "children": []
+          },{
+            "image": "",
+            "href": "/menu_manager",
+            "display": "menu_manager",
+            "lev": "4",
+            "disabled": false,
+            "children": []
+          }
+        ]
+      },
+      {
+        "image": "robot",
+        "href": "",
+        "display": "audit",
+        "lev": "3",
+        "disabled": false,
+        "children": [
+          {
+            "image": "",
+            "href": "/audit",
+            "display": "audit_option",
+            "lev": "4",
+            "disabled": false,
+            "children": []
+          }
+        ]
+      }
+    ]
+  }
+]

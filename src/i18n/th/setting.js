@@ -1,0 +1,40 @@
+const setting = {
+    noti: {
+        notification: "การแจ้งเตือน ",
+        notification_name: "ชื่อการแจ้งเตือน ",
+        time_slot: "รอบเวลา",
+        use_time_slot: "เปิดใช้งาน",
+        time_range: "ระยะเวลา",
+        before: "ก่อน",
+        after: "หลัง",
+        instant: "ทันที",
+        date_type: "ประเภทของวัน",
+        repayment_date: "วันชำระเงิน",
+        add_time_slot: "เพิ่มรอบเวลา ",
+        email: "อีเมล",
+        subject: "หัวข้อ",
+        edit_notification_success: "แก้ไขการแจ้งเตือนสำเร็จ ",
+        invalid: "ไม่มีผลบังคับใช้",
+        valid: "มีผลบังคับใช้",
+        notification_directory: "รายการการแจ้งเตือน ",
+        edit_notification: "แก้ไขการแจ้งเตือน ",
+        add_notification: "เพิ่มการแจ้งเตือน ",
+        edit_validation: "แก้ไขข้อมูลทีมีผลบังคับใช้ ",
+        delete_notification: "ลบการแจ้งเตือน ",
+        validation: "ข้อมูลที่มีผลบังคับใช้ ",
+        loan_account_reminder: "การแจ้งเตือนชำระเงินคืน",
+        default: "ค่าตั้งต้น",
+        by_product_id: "จำแนกตามรหัสผลิตภัณฑ์ ",
+        untitled: 'ไม่มีชื่อ',
+        loan_account_late_notification: "การแจ้งเตือนชำระเงินคืนกรณีล่าช้า",
+        account_statement: "ใบแจ้งยอดบัญชีสินเชื่อ",
+        validtion_type: "ประเภทข้อมูลที่มีผลบังคับใช้",
+        product_id: "รหัสผลิตภัณฑ์ ",
+        add_notification_success: "เพิ่มการแจ้งเตือนสำเร็จ",
+        delete_notification_success: "ลบการแจ้งเตือนสำเร็จ",
+        delete_notification_title: "คุณต้องการลบการแจ้งเตือนนี้ใช่หรือไม่ ",
+        delete_notification_content: "เมื่อทำการลบรายการแล้วจะไม่สามารถเรียกคืนข้อมูลกลับมาได้"
+
+    }
+}
+export default setting
